@@ -33,6 +33,46 @@ flutter devices
 flutter run -d <device-id>
 ```
 
+## Mobile launch scripts
+
+Run these commands from the repository root. The scripts locate the app
+directory automatically, choose an emulator, wait for it to boot, fetch packages,
+and run the app. They use the Dart SDK included with Flutter.
+
+Windows / Android:
+
+```powershell
+.\run-android.cmd
+.\run-android.cmd --check
+.\run-android.cmd --list
+.\run-android.cmd --emulator Pixel_API_36
+.\run-android.cmd --device emulator-5554 -- --release
+```
+
+Use the AVD name or device ID listed on your machine. Install Android Studio and
+the SDK tools first, and create an AVD with a system image in Device Manager.
+Review SDK licenses with `flutter doctor --android-licenses`.
+If the SDK is in a custom location, set `ANDROID_HOME`.
+
+macOS / iOS:
+
+```sh
+bash run-ios.command
+bash run-ios.command --check
+bash run-ios.command --list
+bash run-ios.command --emulator YOUR_SIMULATOR_UDID
+bash run-ios.command --device YOUR_IPHONE_DEVICE_ID
+```
+
+Install Flutter 3.47.6, Xcode and an iOS simulator runtime first. Complete Xcode's
+first-launch setup and license review. The script opens Device Hub on Xcode 27
+or Simulator on older versions. For a physical iPhone, enable Developer Mode
+and set your own Team and bundle identifier under Signing & Capabilities in
+`ios/Runner.xcworkspace`; the project currently contains the upstream author's Team.
+
+Add Flutter's `bin` directory to PATH, or set `FLUTTER_ROOT` to the SDK directory.
+Use `--help` for all options and `--timeout 600` to allow a slower first boot.
+
 ## Verify
 
 ```sh
