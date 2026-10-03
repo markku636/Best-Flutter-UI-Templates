@@ -8,7 +8,7 @@ on: push
 
 env:
   flutter_channel: 'stable' # or: 'dev' or 'beta'
-  flutter_version: '3.38.4'
+  flutter_version: '3.47.6'
 
 jobs:
   build:
@@ -21,6 +21,7 @@ jobs:
     - uses: subosito/flutter-action@v2
       with:
         channel: 'stable' # or: 'beta', 'dev' or 'master'
+        flutter-version: ${{ env.flutter_version }}
 
     - uses: actions/setup-java@v4
       with:
@@ -29,7 +30,12 @@ jobs:
 
     - run: flutter pub get
       working-directory: best_flutter_ui_templates
-    # - run: flutter test
+    - run: flutter test
+      working-directory: best_flutter_ui_templates
+
+    - name: build Web
+      run: flutter build web
+      working-directory: best_flutter_ui_templates
 
     - name: build APK
       run: flutter build apk

@@ -38,7 +38,7 @@ class RunningView extends StatelessWidget {
                                 topRight: Radius.circular(8.0)),
                             boxShadow: <BoxShadow>[
                               BoxShadow(
-                                  color: FitnessAppTheme.grey.withOpacity(0.4),
+                                  color: FitnessAppTheme.grey.withValues(alpha: 0.4),
                                   offset: Offset(1.1, 1.1),
                                   blurRadius: 10.0),
                             ],
@@ -101,7 +101,7 @@ class RunningView extends StatelessWidget {
                                         fontSize: 10,
                                         letterSpacing: 0.0,
                                         color: FitnessAppTheme.grey
-                                            .withOpacity(0.5),
+                                            .withValues(alpha: 0.5),
                                       ),
                                     ),
                                   ),

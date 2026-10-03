@@ -58,7 +58,7 @@ class GlassView extends StatelessWidget {
                                     fontSize: 14,
                                     letterSpacing: 0.0,
                                     color: FitnessAppTheme.nearlyDarkBlue
-                                        .withOpacity(0.6),
+                                        .withValues(alpha: 0.6),
                                   ),
                                 ),
                               ),

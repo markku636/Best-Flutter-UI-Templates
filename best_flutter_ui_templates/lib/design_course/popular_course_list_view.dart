@@ -231,8 +231,8 @@ class CategoryView extends StatelessWidget {
                             ),
                             boxShadow: <BoxShadow>[
                               BoxShadow(
-                                color: DesignCourseAppTheme.grey.withOpacity(
-                                  0.2,
+                                color: DesignCourseAppTheme.grey.withValues(
+                                  alpha: 0.2,
                                 ),
                                 offset: const Offset(0.0, 0.0),
                                 blurRadius: 6.0,

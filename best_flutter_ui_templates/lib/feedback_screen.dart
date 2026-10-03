@@ -68,7 +68,7 @@ class _FeedbackScreenState extends State<FeedbackScreen> {
                               const BorderRadius.all(Radius.circular(4.0)),
                           boxShadow: <BoxShadow>[
                             BoxShadow(
-                                color: Colors.grey.withOpacity(0.6),
+                                color: Colors.grey.withValues(alpha: 0.6),
                                 offset: const Offset(4, 4),
                                 blurRadius: 8.0),
                           ],
@@ -116,7 +116,7 @@ class _FeedbackScreenState extends State<FeedbackScreen> {
           borderRadius: BorderRadius.circular(8),
           boxShadow: <BoxShadow>[
             BoxShadow(
-                color: Colors.grey.withOpacity(0.8),
+                color: Colors.grey.withValues(alpha: 0.8),
                 offset: const Offset(4, 4),
                 blurRadius: 8),
           ],

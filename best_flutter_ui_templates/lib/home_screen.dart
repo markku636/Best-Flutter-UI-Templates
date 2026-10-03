@@ -215,7 +215,7 @@ class HomeListView extends StatelessWidget {
                     Material(
                       color: Colors.transparent,
                       child: InkWell(
-                        splashColor: Colors.grey.withOpacity(0.2),
+                        splashColor: Colors.grey.withValues(alpha: 0.2),
                         borderRadius:
                             const BorderRadius.all(Radius.circular(4.0)),
                         onTap: callBack,

@@ -152,7 +152,7 @@ class _BottomBarViewState extends State<BottomBarView>
                         boxShadow: <BoxShadow>[
                           BoxShadow(
                               color: FitnessAppTheme.nearlyDarkBlue
-                                  .withOpacity(0.4),
+                                  .withValues(alpha: 0.4),
                               offset: const Offset(8.0, 16.0),
                               blurRadius: 16.0),
                         ],
@@ -160,7 +160,7 @@ class _BottomBarViewState extends State<BottomBarView>
                       child: Material(
                         color: Colors.transparent,
                         child: InkWell(
-                          splashColor: Colors.white.withOpacity(0.1),
+                          splashColor: Colors.white.withValues(alpha: 0.1),
                           highlightColor: Colors.transparent,
                           focusColor: Colors.transparent,
                           onTap: widget.addClick,

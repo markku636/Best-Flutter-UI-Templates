@@ -220,7 +220,7 @@ class _CustomCalendarViewState extends State<CustomCalendarView> {
                                           getIsInRange(date)
                                       ? HotelAppTheme.buildLightTheme()
                                           .primaryColor
-                                          .withOpacity(0.4)
+                                          .withValues(alpha: 0.4)
                                       : Colors.transparent
                                   : Colors.transparent,
                               borderRadius: BorderRadius.only(
@@ -302,7 +302,7 @@ class _CustomCalendarViewState extends State<CustomCalendarView> {
                               boxShadow: getIsItStartAndEndDate(date)
                                   ? <BoxShadow>[
                                       BoxShadow(
-                                          color: Colors.grey.withOpacity(0.6),
+                                          color: Colors.grey.withValues(alpha: 0.6),
                                           blurRadius: 4,
                                           offset: const Offset(0, 0)),
                                     ]
@@ -316,7 +316,7 @@ class _CustomCalendarViewState extends State<CustomCalendarView> {
                                         ? Colors.white
                                         : currentMonthDate.month == date.month
                                             ? Colors.black
-                                            : Colors.grey.withOpacity(0.6),
+                                            : Colors.grey.withValues(alpha: 0.6),
                                     fontSize:
                                         MediaQuery.of(context).size.width > 360
                                             ? 18

@@ -135,7 +135,7 @@ class _HotelHomeScreenState extends State<HotelHomeScreen>
         color: HotelAppTheme.backgroundColor,
         boxShadow: <BoxShadow>[
           BoxShadow(
-            color: Colors.grey.withOpacity(0.2),
+            color: Colors.grey.withValues(alpha: 0.2),
             offset: const Offset(0, -2),
             blurRadius: 8.0,
           ),
@@ -230,7 +230,7 @@ class _HotelHomeScreenState extends State<HotelHomeScreen>
                     focusColor: Colors.transparent,
                     highlightColor: Colors.transparent,
                     hoverColor: Colors.transparent,
-                    splashColor: Colors.grey.withOpacity(0.2),
+                    splashColor: Colors.grey.withValues(alpha: 0.2),
                     borderRadius: const BorderRadius.all(Radius.circular(4.0)),
                     onTap: () {
                       FocusScope.of(context).requestFocus(FocusNode());
@@ -255,7 +255,7 @@ class _HotelHomeScreenState extends State<HotelHomeScreen>
                             style: TextStyle(
                               fontWeight: FontWeight.w100,
                               fontSize: 16,
-                              color: Colors.grey.withOpacity(0.8),
+                              color: Colors.grey.withValues(alpha: 0.8),
                             ),
                           ),
                           const SizedBox(height: 8),
@@ -279,7 +279,7 @@ class _HotelHomeScreenState extends State<HotelHomeScreen>
             child: Container(
               width: 1,
               height: 42,
-              color: Colors.grey.withOpacity(0.8),
+              color: Colors.grey.withValues(alpha: 0.8),
             ),
           ),
           Expanded(
@@ -291,7 +291,7 @@ class _HotelHomeScreenState extends State<HotelHomeScreen>
                     focusColor: Colors.transparent,
                     highlightColor: Colors.transparent,
                     hoverColor: Colors.transparent,
-                    splashColor: Colors.grey.withOpacity(0.2),
+                    splashColor: Colors.grey.withValues(alpha: 0.2),
                     borderRadius: const BorderRadius.all(Radius.circular(4.0)),
                     onTap: () {
                       FocusScope.of(context).requestFocus(FocusNode());
@@ -312,7 +312,7 @@ class _HotelHomeScreenState extends State<HotelHomeScreen>
                             style: TextStyle(
                               fontWeight: FontWeight.w100,
                               fontSize: 16,
-                              color: Colors.grey.withOpacity(0.8),
+                              color: Colors.grey.withValues(alpha: 0.8),
                             ),
                           ),
                           const SizedBox(height: 8),
@@ -350,7 +350,7 @@ class _HotelHomeScreenState extends State<HotelHomeScreen>
                   borderRadius: const BorderRadius.all(Radius.circular(38.0)),
                   boxShadow: <BoxShadow>[
                     BoxShadow(
-                      color: Colors.grey.withOpacity(0.2),
+                      color: Colors.grey.withValues(alpha: 0.2),
                       offset: const Offset(0, 2),
                       blurRadius: 8.0,
                     ),
@@ -382,7 +382,7 @@ class _HotelHomeScreenState extends State<HotelHomeScreen>
               borderRadius: const BorderRadius.all(Radius.circular(38.0)),
               boxShadow: <BoxShadow>[
                 BoxShadow(
-                  color: Colors.grey.withOpacity(0.4),
+                  color: Colors.grey.withValues(alpha: 0.4),
                   offset: const Offset(0, 2),
                   blurRadius: 8.0,
                 ),
@@ -397,7 +397,7 @@ class _HotelHomeScreenState extends State<HotelHomeScreen>
                 },
                 child: Padding(
                   padding: const EdgeInsets.all(16.0),
-                  child: Icon(
+                  child: FaIcon(
                     FontAwesomeIcons.magnifyingGlass,
                     size: 20,
                     color: HotelAppTheme.backgroundColor,
@@ -424,7 +424,7 @@ class _HotelHomeScreenState extends State<HotelHomeScreen>
               color: HotelAppTheme.backgroundColor,
               boxShadow: <BoxShadow>[
                 BoxShadow(
-                  color: Colors.grey.withOpacity(0.2),
+                  color: Colors.grey.withValues(alpha: 0.2),
                   offset: const Offset(0, -2),
                   blurRadius: 8.0,
                 ),
@@ -461,7 +461,7 @@ class _HotelHomeScreenState extends State<HotelHomeScreen>
                     focusColor: Colors.transparent,
                     highlightColor: Colors.transparent,
                     hoverColor: Colors.transparent,
-                    splashColor: Colors.grey.withOpacity(0.2),
+                    splashColor: Colors.grey.withValues(alpha: 0.2),
                     borderRadius: const BorderRadius.all(Radius.circular(4.0)),
                     onTap: () {
                       FocusScope.of(context).requestFocus(FocusNode());
@@ -532,7 +532,7 @@ class _HotelHomeScreenState extends State<HotelHomeScreen>
         color: HotelAppTheme.backgroundColor,
         boxShadow: <BoxShadow>[
           BoxShadow(
-            color: Colors.grey.withOpacity(0.2),
+            color: Colors.grey.withValues(alpha: 0.2),
             offset: const Offset(0, 2),
             blurRadius: 8.0,
           ),
@@ -601,7 +601,7 @@ class _HotelHomeScreenState extends State<HotelHomeScreen>
                       onTap: () {},
                       child: Padding(
                         padding: const EdgeInsets.all(8.0),
-                        child: Icon(FontAwesomeIcons.locationDot),
+                        child: FaIcon(FontAwesomeIcons.locationDot),
                       ),
                     ),
                   ),
