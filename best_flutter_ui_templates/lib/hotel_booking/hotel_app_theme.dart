@@ -2,6 +2,8 @@ import 'package:best_flutter_ui_templates/main.dart';
 import 'package:flutter/material.dart';
 
 class HotelAppTheme {
+  static const Color backgroundColor = Color(0xFFFFFFFF);
+
   static TextTheme _buildTextTheme(TextTheme base) {
     const String fontName = 'WorkSans';
     return base.copyWith(
@@ -27,6 +29,8 @@ class HotelAppTheme {
     final ColorScheme colorScheme = const ColorScheme.light().copyWith(
       primary: primaryColor,
       secondary: secondaryColor,
+      surface: backgroundColor,
+      error: const Color(0xFFB00020),
     );
     final ThemeData base = ThemeData.light();
     return base.copyWith(
@@ -43,7 +47,7 @@ class HotelAppTheme {
       textTheme: _buildTextTheme(base.textTheme),
       primaryTextTheme: _buildTextTheme(base.primaryTextTheme),
       platform: TargetPlatform.iOS,
-      colorScheme: colorScheme.copyWith(background: const Color(0xFFFFFFFF)),
+      colorScheme: colorScheme,
       tabBarTheme: TabBarThemeData(indicatorColor: Colors.white),
     );
   }

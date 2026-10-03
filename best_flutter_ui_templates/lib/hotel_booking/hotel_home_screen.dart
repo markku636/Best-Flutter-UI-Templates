@@ -87,9 +87,7 @@ class _HotelHomeScreenState extends State<HotelHomeScreen>
                               ];
                             },
                         body: Container(
-                          color: HotelAppTheme.buildLightTheme()
-                              .colorScheme
-                              .background,
+                          color: HotelAppTheme.backgroundColor,
                           child: ListView.builder(
                             itemCount: hotelList.length,
                             padding: const EdgeInsets.only(top: 8),
@@ -134,7 +132,7 @@ class _HotelHomeScreenState extends State<HotelHomeScreen>
   Widget getListUI() {
     return Container(
       decoration: BoxDecoration(
-        color: HotelAppTheme.buildLightTheme().colorScheme.background,
+        color: HotelAppTheme.backgroundColor,
         boxShadow: <BoxShadow>[
           BoxShadow(
             color: Colors.grey.withOpacity(0.2),
@@ -348,7 +346,7 @@ class _HotelHomeScreenState extends State<HotelHomeScreen>
               padding: const EdgeInsets.only(right: 16, top: 8, bottom: 8),
               child: Container(
                 decoration: BoxDecoration(
-                  color: HotelAppTheme.buildLightTheme().colorScheme.background,
+                  color: HotelAppTheme.backgroundColor,
                   borderRadius: const BorderRadius.all(Radius.circular(38.0)),
                   boxShadow: <BoxShadow>[
                     BoxShadow(
@@ -402,8 +400,7 @@ class _HotelHomeScreenState extends State<HotelHomeScreen>
                   child: Icon(
                     FontAwesomeIcons.magnifyingGlass,
                     size: 20,
-                    color:
-                        HotelAppTheme.buildLightTheme().colorScheme.background,
+                    color: HotelAppTheme.backgroundColor,
                   ),
                 ),
               ),
@@ -424,7 +421,7 @@ class _HotelHomeScreenState extends State<HotelHomeScreen>
           child: Container(
             height: 24,
             decoration: BoxDecoration(
-              color: HotelAppTheme.buildLightTheme().colorScheme.background,
+              color: HotelAppTheme.backgroundColor,
               boxShadow: <BoxShadow>[
                 BoxShadow(
                   color: Colors.grey.withOpacity(0.2),
@@ -436,7 +433,7 @@ class _HotelHomeScreenState extends State<HotelHomeScreen>
           ),
         ),
         Container(
-          color: HotelAppTheme.buildLightTheme().colorScheme.background,
+          color: HotelAppTheme.backgroundColor,
           child: Padding(
             padding: const EdgeInsets.only(
               left: 16,
@@ -532,7 +529,7 @@ class _HotelHomeScreenState extends State<HotelHomeScreen>
   Widget getAppBarUI() {
     return Container(
       decoration: BoxDecoration(
-        color: HotelAppTheme.buildLightTheme().colorScheme.background,
+        color: HotelAppTheme.backgroundColor,
         boxShadow: <BoxShadow>[
           BoxShadow(
             color: Colors.grey.withOpacity(0.2),
